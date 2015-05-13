@@ -1,0 +1,28 @@
+{
+  "name": "hashmap",
+  "version": "1.0.0",
+  "description": "a javascript hashmap implementation that handles key collisions",
+  "main": "hashmap.js",
+  "scripts": {
+    "test": "watch jest . -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schwiet/hashmap.git"
+  },
+  "keywords": [
+    "javascript",
+    "hashmap",
+    "hashtable"
+  ],
+  "author": "schwiet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schwiet/hashmap/issues"
+  },
+  "homepage": "https://github.com/schwiet/hashmap",
+  "devDependencies": {
+    "jest-cli": "^0.4.3",
+    "watch": "^0.16.0"
+  }
+}
