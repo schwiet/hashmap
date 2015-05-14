@@ -10,7 +10,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-for( i = 0; i < 100; i += 1 ){
+for( i = 0; i < 1000; i += 1 ){
 
   next_obj = {
     id_1: getRandomInt( 1, 10 ),
@@ -61,18 +61,22 @@ var equalsFn = function( obj, other ){
 };
 
 toString = function( obj ){
-  var key = obj.id_1 + '-' +
-            obj.id_2 + '-' +
-            obj.id_3 + '-' +
-            obj.id_4 + '-' +
-            obj.id_5 + '-' +
-            obj.id_6 + '-' +
-            obj.id_7 + '-' +
-            obj.id_8 + '-' +
-            obj.id_9 + '-' +
-            obj.id_0 + '-' +
-            obj.id_u;
+  var key = obj._key;
 
+  if( !key ){
+    key = obj.id_1 + '-' +
+          obj.id_2 + '-' +
+          obj.id_3 + '-' +
+          obj.id_4 + '-' +
+          obj.id_5 + '-' +
+          obj.id_6 + '-' +
+          obj.id_7 + '-' +
+          obj.id_8 + '-' +
+          obj.id_9 + '-' +
+          obj.id_0 + '-' +
+          obj.id_u;
+    obj._key = key; // caching key, ~15% improvement
+  }
   return key;
 };
 
