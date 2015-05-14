@@ -2,6 +2,10 @@
 a javascript hashmap implementation that handles key collisions
 
 
+###Install
+
+    npm install --save hashmap-js
+
 ##Description
 This module implements a hashmap, which can use objects as keys.
 You provide the hashing function and a function to determine
@@ -12,7 +16,7 @@ equality, in the case of collisions.
 
 to initialize, provide your hashing function and equals function:
 
-    var HashMap = require( 'hashmap' );
+    var HashMap = require( 'hashmap-js' );
 
     var myMap = HashMap( hashFn, equalsFn ),
         value = { test: 'success' };
