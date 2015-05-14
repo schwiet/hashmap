@@ -48,22 +48,16 @@ this function will be used to compare two keys, in the case that
 they result in the same value from `hashFn`.
 
 ###API
-`set( key, value )` - stores the passed value, which will be
+`set( key, value )` - stores the passed value, which will be referenced by the passed key.
 
-                      referenced by the passed key.
 
-                      
-`get( key )`        - returns the value referenced by the
-
-                      passed key, if present
+`get( key )`        - returns the value referenced by the passed key, if present
 
 
 `contains( key )`   - true if the key is present, otherwise false
 
 
-`remove( key )`     - removes the value referenced by the
-
-                      passed key, if present
+`remove( key )`     - removes the value referenced by the passed key, if present
 
 
 `count()`           - returns the number of elements in the map
@@ -72,9 +66,7 @@ they result in the same value from `hashFn`.
 `clear()`           - resets ths map
 
 
-`forEach( onEach )` - iterates over each present value and passes
-
-                      them to the provided callback
+`forEach( onEach )` - iterates over each present value and passes them to the provided callback
 
 ###testing
 to run the test you'll need to install the development dependencies:
