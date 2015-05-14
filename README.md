@@ -70,7 +70,9 @@ they result in the same value from `hashFn`.
 
 ###testing
 to run the test you'll need to install the development dependencies:
+
     npm install
 
 then to run the tests:
+
     npm test
