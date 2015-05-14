@@ -1,6 +1,6 @@
 {
   "name": "hashmap-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a javascript hashmap implementation that handles key collisions",
   "main": "hashmap.js",
   "scripts": {
