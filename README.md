@@ -1,6 +1,15 @@
 # hashmap
 a javascript hashmap implementation that handles key collisions
 
+##Disclaimer
+
+In my contrived tests, with a fast hash function that produced ~.002%
+collisions, the `HashMap` performed ~30% slower than using a plain old object
+with a `toString()` function that generated unique strings for each object.
+So if speed is your aim, this module does not outperform that method, at least
+not in my testing. Good learning experience for me, probably not that helpful
+to you...
+
 
 ###Install
 

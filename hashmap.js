@@ -54,6 +54,7 @@ init: function( hashFn, equalsFn ){
     return node.value;
   };
 
+  var collision_count = 0;
   //
   add_node = function( key, value, index, previous_node ){
     var node = { key: key, value: value, next: null };
@@ -61,6 +62,7 @@ init: function( hashFn, equalsFn ){
     // there is at least another node in this bin
     if( previous_node ){
       previous_node.next = node;
+      collision_count += 1;
     }
 
     // first node in this bin
@@ -181,6 +183,10 @@ init: function( hashFn, equalsFn ){
      */
     count: function(){
       return count;
+    },
+
+    _get_collision_count: function(){
+      return collision_count;
     },
 
     /*
