@@ -1,7 +1,7 @@
 # hashmap
 a javascript hashmap implementation that handles key collisions
 
-##Disclaimer
+## Disclaimer
 
 In my contrived tests, with a fast hash function that produced ~.002%
 collisions, the `HashMap` performed ~30% slower than using a plain old object
@@ -11,17 +11,17 @@ not in my testing. Good learning experience for me, probably not that helpful
 to you...
 
 
-###Install
+### Install
 
     npm install --save hashmap-js
 
-##Description
+## Description
 This module implements a hashmap, which can use objects as keys.
 You provide the hashing function and a function to determine
 equality, in the case of collisions.
 
 
-###Usage
+### Usage
 
 to initialize, provide your hashing function and equals function:
 
@@ -40,7 +40,7 @@ to initialize, provide your hashing function and equals function:
 want to use objects as keys and want to handle possible
 collisions.
 
-###`hashFn( key )`
+### `hashFn( key )`
 `hashFn` is a function that should be able to convert a key to a
 hash. Traditionally, this would be a number that is calculated by
 performing some arithmetic on the values of an object that
@@ -56,11 +56,11 @@ said, Hashmap is perfectly suitable even if you just provide
 if you expect `toString()` to produce collisions for two
 non-equivalent objects.
 
-###`equals( key, otherKey )`
+### `equals( key, otherKey )`
 this function will be used to compare two keys, in the case that
 they result in the same value from `hashFn`.
 
-###API
+### API
 `set( key, value )` - stores the passed value, which will be referenced by the passed key.
 
 
@@ -81,7 +81,7 @@ they result in the same value from `hashFn`.
 
 `forEach( onEach )` - iterates over each present value and passes them to the provided callback
 
-###testing
+### testing
 to run the test you'll need to install the development dependencies:
 
     npm install
